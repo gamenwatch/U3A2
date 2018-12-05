@@ -266,10 +266,39 @@ public class AlienMoney extends javax.swing.JFrame {
             vrobitsNum = vrobitsNum - CLICKWICK;
             clickwicksNum = clickwicksNum + 1;
         }
-        vrobitsNum = vrobitsNum + DROBZIT;
-        drobzitsNum = drobzitsNum - 1;
-        drobzitOutput.setText(""+drobzitsNum);
+        vrobitsNum = vrobitsNum + CLICKWICK;
+        clickwicksNum = clickwicksNum - 1;
+        clickwickOutput.setText(""+clickwicksNum);
         
+        //Gazoontight Loop
+        while (vrobitsNum > 0) {
+            vrobitsNum = vrobitsNum - GAZOONTIGHT;
+            gazoontightsNum = gazoontightsNum + 1;
+        }
+        vrobitsNum = vrobitsNum + GAZOONTIGHT;
+        gazoontightsNum = gazoontightsNum - 1;
+        gazoontightOutput.setText(""+gazoontightsNum);
+        
+        //Frazoint Loop
+        while (vrobitsNum > 0) {
+            vrobitsNum = vrobitsNum - FRAZOINT;
+            frazointsNum = frazointsNum + 1;
+        }
+        vrobitsNum = vrobitsNum + FRAZOINT;
+        frazointsNum = frazointsNum - 1;
+        clickwickOutput.setText(""+frazointsNum);
+        
+        //Blointoint Loop
+        while (vrobitsNum > 0) {
+            vrobitsNum = vrobitsNum - BLOINTOINT;
+            blointointsNum = blointointsNum + 1;
+        }
+        vrobitsNum = vrobitsNum + BLOINTOINT;
+        blointointsNum = blointointsNum - 1;
+        clickwickOutput.setText(""+blointointsNum);
+        
+        //Vorbits
+        clickwickOutput.setText(""+vrobitsNum);
         
     }//GEN-LAST:event_startButtonActionPerformed
 
